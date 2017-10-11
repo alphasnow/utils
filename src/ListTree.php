@@ -12,10 +12,11 @@ namespace Xcxxkj\Util;
 class ListTree
 {
     /**
-     * 把返回的数据集转换成Tree
-     * @param array $list 要转换的数据集
-     * @param string $pid parent标记字段
-     * @param string $level level标记字段
+     * @param $list
+     * @param string $pk
+     * @param string $pid
+     * @param string $child
+     * @param int $root
      * @return array
      */
     public static function listToTree($list, $pk='id', $pid = 'pid', $child = '_child', $root = 0) {
@@ -44,13 +45,11 @@ class ListTree
     }
 
     /**
-     * 将list_to_tree的树还原成列表
-     * @param  array $tree  原来的树
-     * @param  string $child 孩子节点的键
-     * @param  string $order 排序显示的键，一般是主键 升序排列
-     * @param  array  $list  过渡用的中间数组，
-     * @return array        返回排过序的列表数组
-     * @author yangweijie <yangweijiester@gmail.com>
+     * @param $tree
+     * @param string $child
+     * @param string $order
+     * @param array $list
+     * @return array
      */
     public static function TreeToList($tree, $child = '_child', $order='id', &$list = array()){
         if(is_array($tree)) {
@@ -62,25 +61,22 @@ class ListTree
                 }
                 $list[] = $reffer;
             }
-            $list = self::listSortBy($list, $order, $sortby='asc');
+            $list = self::listSortBy($list, $order, $sortBy='asc');
         }
         return $list;
     }
 
     /**
-     * 对查询结果集进行排序
-     * @access public
-     * @param array $list 查询结果
-     * @param string $field 排序的字段名
-     * @param array $sortby 排序类型
-     * asc正向排序 desc逆向排序 nat自然排序
+     * @param $list
+     * @param $field
+     * @param string $sortBy
      * @return array
      */
-    public static function listSortBy($list,$field, $sortby='asc') {
+    public static function listSortBy($list,$field, $sortBy='asc') {
         $refer = $resultSet = array();
         foreach ($list as $i => $data)
             $refer[$i] = &$data[$field];
-        switch ($sortby) {
+        switch ($sortBy) {
             case 'asc': // 正向排序
                 asort($refer);
                 break;
