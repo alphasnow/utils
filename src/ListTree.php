@@ -80,7 +80,7 @@ class ListTree
             case 'asc': // 正向排序
                 asort($refer);
                 break;
-            case 'desc':// 逆向排序
+            case 'desc': // 逆向排序
                 arsort($refer);
                 break;
             case 'nat': // 自然排序
