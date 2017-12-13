@@ -11,7 +11,7 @@ PHP >= 5.6.4
 ```
 
 # Installation
-
+使用composer命令安装
 ```shell
 $ composer require xcxxkj/util
 ```
