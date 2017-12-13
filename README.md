@@ -5,13 +5,13 @@ Xcxxkj/Util
 [![Total Downloads](https://poser.pugx.org/xcxxkj/util/downloads)](https://packagist.org/packages/xcxxkj/util)
 [![License](https://poser.pugx.org/xcxxkj/util/license)](https://packagist.org/packages/xcxxkj/util)
 # Requirement
-基础运行环境
+运行环境要求
 ```
 PHP >= 5.6.4
 ```
 
 # Installation
-Composer安装
+Composer命令安装
 ```shell
 $ composer require xcxxkj/util
 ```
