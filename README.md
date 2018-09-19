@@ -6,17 +6,15 @@ SleepCat/Utils
 ![License](https://poser.pugx.org/sleep-cat/utils/license)
 
 ## Requirement
-```
-PHP >= 5.5.9
-```
+- PHP >= 5.5.9
 
 ## Install
-```
-$ composer require sleep-cat/utils
+```bash
+composer require sleep-cat/utils
 ```
 
 ## Example
-```
+```php
 use SleepCat\ListTree;
 $list = [
     ['id' => 1, 'pid' => 0, 'name' => 'node1'],
@@ -39,4 +37,4 @@ $name = snake_name('ArticleCategory')
 ```
 
 ## License
-MIT License. See the [LICENSE](LICENSE.txt) file. You can use Hashids in open source projects and commercial products. Don't break the Internet. Kthxbye.
+MIT License. See the [LICENSE](LICENSE.txt) file.
