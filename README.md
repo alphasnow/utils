@@ -1,15 +1,15 @@
-Xcxxkj/Util
+SleepCat/Utils
 ===========
-[![Build Status](https://travis-ci.org/xcxxkj/util.svg?branch=master)](https://travis-ci.org/xcxxkj/util)
-[![Latest Stable Version](https://poser.pugx.org/xcxxkj/util/v/stable)](https://packagist.org/packages/xcxxkj/util)
-[![Total Downloads](https://poser.pugx.org/xcxxkj/util/downloads)](https://packagist.org/packages/xcxxkj/util)
-[![License](https://poser.pugx.org/xcxxkj/util/license)](https://packagist.org/packages/xcxxkj/util)
+[![Build Status](https://travis-ci.org/sleep-cat/utils.svg?branch=master)](https://travis-ci.org/sleep-cat/utils)
+[![Latest Stable Version](https://poser.pugx.org/sleep-cat/utils/v/stable)](https://packagist.org/packages/sleep-cat/utils)
+[![Total Downloads](https://poser.pugx.org/sleep-cat/utils/downloads)](https://packagist.org/packages/sleep-cat/utils)
+[![License](https://poser.pugx.org/sleep-cat/utils/license)](https://packagist.org/packages/sleep-cat/utils)
 # Requirement
 ```
-PHP >= 5.6.4
+PHP >= 5.5.9
 ```
 
 # Installation
-```shell
-$ composer require xcxxkj/util
+```sh
+composer require sleep-cat/utils
 ```
