@@ -1,12 +1,6 @@
 <?php
-/**
- * Date: 2017/10/11
- * Time: 22:14
- * User: weifeng
- * Mail: xcxxkj@aliyun.com
- */
 
-namespace Xcxxkj\Util;
+namespace SleepCat\Utils;
 
 
 class ListTree
@@ -19,21 +13,19 @@ class ListTree
      * @param int $root
      * @return array
      */
-    public static function listToTree($list, $pk='id', $pid = 'pid', $child = '_child', $root = 0) {
-        // 创建Tree
+    public static function listToTree($list, $pk = 'id', $pid = 'pid', $child = '_child', $root = 0)
+    {
         $tree = array();
-        if(is_array($list)) {
-            // 创建基于主键的数组引用
+        if (is_array($list)) {
             $refer = array();
             foreach ($list as $key => $data) {
                 $refer[$data[$pk]] =& $list[$key];
             }
             foreach ($list as $key => $data) {
-                // 判断是否存在parent
-                $parentId =  $data[$pid];
+                $parentId = $data[$pid];
                 if ($root == $parentId) {
                     $tree[] =& $list[$key];
-                }else{
+                } else {
                     if (isset($refer[$parentId])) {
                         $parent =& $refer[$parentId];
                         $parent[$child][] =& $list[$key];
@@ -51,17 +43,18 @@ class ListTree
      * @param array $list
      * @return array
      */
-    public static function TreeToList($tree, $child = '_child', $order='id', &$list = array()){
-        if(is_array($tree)) {
+    public static function TreeToList($tree, $child = '_child', $order = 'id', &$list = array())
+    {
+        if (is_array($tree)) {
             foreach ($tree as $key => $value) {
-                $reffer = $value;
-                if(isset($reffer[$child])){
-                    unset($reffer[$child]);
+                $buffer = $value;
+                if (isset($buffer[$child])) {
+                    unset($buffer[$child]);
                     self::TreeToList($value[$child], $child, $order, $list);
                 }
-                $list[] = $reffer;
+                $list[] = $buffer;
             }
-            $list = self::listSortBy($list, $order, $sortBy='asc');
+            $list = self::listSortBy($list, $order, $sortBy = 'asc');
         }
         return $list;
     }
@@ -72,22 +65,23 @@ class ListTree
      * @param string $sortBy
      * @return array
      */
-    public static function listSortBy($list,$field, $sortBy='asc') {
+    public static function listSortBy($list, $field, $sortBy = 'asc')
+    {
         $refer = $resultSet = array();
         foreach ($list as $i => $data)
             $refer[$i] = &$data[$field];
         switch ($sortBy) {
-            case 'asc': // 正向排序
+            case 'asc':
                 asort($refer);
                 break;
-            case 'desc': // 逆向排序
+            case 'desc':
                 arsort($refer);
                 break;
-            case 'nat': // 自然排序
+            case 'nat':
                 natcasesort($refer);
                 break;
         }
-        foreach ( $refer as $key=> $val)
+        foreach ($refer as $key => $val)
             $resultSet[] = &$list[$key];
         return $resultSet;
     }

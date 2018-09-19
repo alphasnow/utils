@@ -1,29 +1,36 @@
 {
-    "name": "xcxxkj/util",
-    "description": "php library",
-    "keywords": [
-        "php", "library"
-    ],
-    "type": "library",
-    "homepage": "https://github.com/xcxxkj/util",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "weifeng",
-            "email": "xcxxkj@aliyun.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.6.4"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~5.0"
-    },
-    "autoload": {
-        "psr-4": { "Xcxxkj\\Util\\": "src/" },
-        "files": [ "src/helpers.php" ]
-    },
-    "autoload-dev": {
-        "classmap": [ "tests" ]
+  "name": "sleep-cat/utils",
+  "description": "php library",
+  "keywords": [
+    "php",
+    "library"
+  ],
+  "type": "library",
+  "homepage": "https://github.com/sleep-cat/utils",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "weifeng",
+      "email": "xcxxkj@aliyun.com"
     }
+  ],
+  "require": {
+    "php": ">=5.5.9"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "SleepCat\\Utils\\": "src/"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests"
+    ]
+  }
 }
