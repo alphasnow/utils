@@ -1,6 +1,12 @@
 <?php
 
 if (!function_exists('snake_name')) {
+    /**
+     * Get snake name
+     *
+     * @param $name
+     * @return string
+     */
     function snake_name($name)
     {
         if (!ctype_lower($name)) {
@@ -13,6 +19,12 @@ if (!function_exists('snake_name')) {
 }
 
 if (!function_exists('studly_name')) {
+    /**
+     * Get studly name
+     *
+     * @param $name
+     * @return string
+     */
     function studly_name($name)
     {
         $name = ucwords(str_replace(['-', '_'], ' ', $name));
