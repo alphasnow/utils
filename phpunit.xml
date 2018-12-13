@@ -3,7 +3,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
-        <testsuite name="Xcxxkj Util Test Suite">
+        <testsuite name="Utils">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>

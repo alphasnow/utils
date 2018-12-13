@@ -21,7 +21,6 @@ class ListTreeTest extends PHPUnit_Framework_TestCase
                 ]]
             ]],
         ];
-        parent::setUp();
     }
 
     public function testListToTree()
@@ -36,11 +35,31 @@ class ListTreeTest extends PHPUnit_Framework_TestCase
 
     public function testListBySort()
     {
-        $listSort = [
+        $this->assertEquals(
+        [
             ['id' => 3, 'pid' => 2, 'name' => 'node3'],
             ['id' => 2, 'pid' => 1, 'name' => 'node2'],
             ['id' => 1, 'pid' => 0, 'name' => 'node1'],
-        ];
-        $this->assertEquals($listSort, ListTree::listSortBy($this->list, 'id', 'desc'));
+        ],
+            ListTree::listSortBy($this->list, 'id', 'desc')
+        );
+
+        $this->assertEquals(
+            [
+                ['id' => 1, 'pid' => 0, 'name' => 'node1'],
+                ['id' => 2, 'pid' => 1, 'name' => 'node2'],
+                ['id' => 3, 'pid' => 2, 'name' => 'node3'],
+            ],
+            ListTree::listSortBy($this->list, 'id', 'asc')
+        );
+
+        $this->assertEquals(
+            [
+                ['id' => 1, 'pid' => 0, 'name' => 'node1'],
+                ['id' => 2, 'pid' => 1, 'name' => 'node2'],
+                ['id' => 3, 'pid' => 2, 'name' => 'node3'],
+            ],
+            ListTree::listSortBy($this->list, 'name', 'nat')
+        );
     }
 }

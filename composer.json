@@ -1,9 +1,10 @@
 {
   "name": "sleep-cat/utils",
-  "description": "php library",
+  "description": "PHP util package",
   "keywords": [
     "php",
-    "library"
+    "toolkit",
+    "work-box"
   ],
   "type": "library",
   "homepage": "https://github.com/sleep-cat/utils",
@@ -15,7 +16,7 @@
     }
   ],
   "require": {
-    "php": ">=5.5.9"
+    "php": ">=5.5"
   },
   "require-dev": {
     "phpunit/phpunit": "~5.0"

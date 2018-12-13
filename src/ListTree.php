@@ -2,7 +2,6 @@
 
 namespace SleepCat\Utils;
 
-
 class ListTree
 {
     /**
