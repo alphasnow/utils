@@ -1,10 +1,11 @@
 SleepCat/Utils
 ===========
-[![Build Status](https://travis-ci.org/sleep-cat/utils.svg?branch=master)](https://travis-ci.org/sleep-cat/utils)
 [![Latest Stable Version](https://poser.pugx.org/sleep-cat/utils/v/stable)](https://packagist.org/packages/sleep-cat/utils)
 [![Total Downloads](https://poser.pugx.org/sleep-cat/utils/downloads)](https://packagist.org/packages/sleep-cat/utils)
 [![License](https://poser.pugx.org/sleep-cat/utils/license)](https://packagist.org/packages/sleep-cat/utils)
-
+[![Build Status](https://travis-ci.org/sleep-cat/utils.svg?branch=master)](https://travis-ci.org/sleep-cat/utils)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sleep-cat/utils/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sleep-cat/utils/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/sleep-cat/utils/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/sleep-cat/utils/?branch=master)
 ## Requirement
 - PHP >= 5.6
 
