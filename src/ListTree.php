@@ -1,53 +1,66 @@
 <?php
 
+/*
+ * This file is part of the sleep-cat/utils.
+ * (c) sleep-cat <wind91@foxmail.com>
+ * This source file is subject to the MIT license that is bundled.
+ */
+
 namespace SleepCat\Utils;
+
 /**
- * Change the list to tree
+ * List array convert to tree array.
  *
  * Class ListTree
- * @package SleepCat\Utils
  */
 class ListTree
 {
     /**
-     * @param array $list
+     * list to tree.
+     *
+     * @param array  $list
      * @param string $pk
      * @param string $pid
      * @param string $child
-     * @param int $root
+     * @param int    $root
+     *
      * @return array
      */
-    public static function listToTree(array $list, $pk = 'id', $pid = 'pid', $child = '_child', $root = 0)
+    public static function listToTree($list, $pk = 'id', $pid = 'pid', $child = '_child', $root = 0)
     {
-        $tree = array();
+        $tree = [];
         if (is_array($list)) {
-            $refer = array();
+            $refer = [];
             foreach ($list as $key => $data) {
-                $refer[$data[$pk]] =& $list[$key];
+                $refer[$data[$pk]] = &$list[$key];
             }
             foreach ($list as $key => $data) {
                 $parentId = $data[$pid];
                 if ($root == $parentId) {
-                    $tree[] =& $list[$key];
+                    $tree[] = &$list[$key];
                 } else {
                     if (isset($refer[$parentId])) {
-                        $parent =& $refer[$parentId];
-                        $parent[$child][] =& $list[$key];
+                        $parent = &$refer[$parentId];
+                        $parent[$child][] = &$list[$key];
                     }
                 }
             }
         }
+
         return $tree;
     }
 
     /**
-     * @param array $tree
+     * tree to list.
+     *
+     * @param array  $tree
      * @param string $child
      * @param string $order
-     * @param array $list
+     * @param array  $list
+     *
      * @return array
      */
-    public static function TreeToList(array $tree, $child = '_child', $order = 'id', &$list = array())
+    public static function TreeToList($tree, $child = '_child', $order = 'id', &$list = [])
     {
         if (is_array($tree)) {
             foreach ($tree as $key => $value) {
@@ -60,18 +73,21 @@ class ListTree
             }
             $list = self::listSortBy($list, $order, $sortBy = 'asc');
         }
+
         return $list;
     }
 
     /**
-     * @param array $list
-     * @param $field
+     * array sort.
+     *
+     * @param string $field
      * @param string $sortBy
+     *
      * @return array
      */
     public static function listSortBy(array $list, $field, $sortBy = 'asc')
     {
-        $refer = $resultSet = array();
+        $refer = $resultSet = [];
         foreach ($list as $i => $data) {
             $refer[$i] = &$data[$field];
         }
@@ -89,6 +105,7 @@ class ListTree
         foreach ($refer as $key => $val) {
             $resultSet[] = &$list[$key];
         }
+
         return $resultSet;
     }
 }
