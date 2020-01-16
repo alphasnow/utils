@@ -36,7 +36,7 @@ class ListTree
             }
             foreach ($list as $key => $data) {
                 $parentId = $data[$pid];
-                if ($root == $parentId) {
+                if ($root === $parentId) {
                     $tree[] = &$list[$key];
                 } else {
                     if (isset($refer[$parentId])) {
@@ -95,12 +95,15 @@ class ListTree
         switch ($sortBy) {
             case 'asc':
                 asort($refer);
+
                 break;
             case 'desc':
                 arsort($refer);
+
                 break;
             case 'nat':
                 natcasesort($refer);
+
                 break;
         }
         foreach ($refer as $key => $val) {
