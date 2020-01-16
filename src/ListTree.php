@@ -80,7 +80,7 @@ class ListTree
     /**
      * array sort.
      *
-     * @param array $list
+     * @param array  $list
      * @param string $field
      * @param string $sortBy
      *
