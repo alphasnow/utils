@@ -14,6 +14,7 @@ use SleepCat\Utils\ListTree;
 class ListTreeTest extends TestCase
 {
     protected $tree;
+
     protected $list;
 
     protected function setUp(): void
