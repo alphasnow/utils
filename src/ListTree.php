@@ -80,12 +80,13 @@ class ListTree
     /**
      * array sort.
      *
+     * @param array $list
      * @param string $field
      * @param string $sortBy
      *
      * @return array
      */
-    public static function listSortBy(array $list, $field, $sortBy = 'asc')
+    public static function listSortBy($list, $field, $sortBy = 'asc')
     {
         $refer = $resultSet = [];
         foreach ($list as $i => $data) {

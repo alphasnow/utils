@@ -7,7 +7,7 @@ SleepCat/Utils
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sleep-cat/utils/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sleep-cat/utils/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/sleep-cat/utils/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/sleep-cat/utils/?branch=master)
 ## Requirement
-- PHP >= 5.6
+- PHP >= 7.0
 
 ## Install
 ```bash
