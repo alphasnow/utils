@@ -1,11 +1,14 @@
 AlphaSnow/Utils
 ===========
-[![Latest Stable Version](https://poser.pugx.org/alphasnow/utils/v/stable.svg)](https://packagist.org/packages/alphasnow/utils)
-[![Total Downloads](https://poser.pugx.org/alphasnow/utils/downloads.svg)](https://packagist.org/packages/alphasnow/utils)
-[![License](https://poser.pugx.org/alphasnow/utils/license.svg)](https://packagist.org/packages/alphasnow/utils)
+[![Latest Stable Version](https://poser.pugx.org/alphasnow/utils/v/stable)](https://packagist.org/packages/alphasnow/utils)
+[![Total Downloads](https://poser.pugx.org/alphasnow/utils/downloads)](https://packagist.org/packages/alphasnow/utils)
+[![License](https://poser.pugx.org/alphasnow/utils/license)](https://packagist.org/packages/alphasnow/utils)
+
+[![Build Status](https://travis-ci.org/alphasnow/utils.svg?branch=master)](https://travis-ci.org/alphasnow/utils)
+
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/alphasnow/utils/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/alphasnow/utils/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/alphasnow/utils/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/alphasnow/utils/?branch=master)
-[![Build Status](https://travis-ci.org/alphasnow/utils.svg?branch=master)](https://travis-ci.org/alphasnow/utils)
+
 ## Requirement
 - PHP >= 7.2
 
