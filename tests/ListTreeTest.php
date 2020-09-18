@@ -6,7 +6,7 @@
  * This source file is subject to the MIT license that is bundled.
  */
 
-namespace Tests;
+namespace AlphaSnow\Utils\Test;
 
 use AlphaSnow\Utils\ListTree;
 use PHPUnit\Framework\TestCase;

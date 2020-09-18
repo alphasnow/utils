@@ -37,6 +37,18 @@ $tree = ListTree::listToTree($list);
 $name = snake_name('ArticleCategory')
 // article_category
 ```
+
+## scripts
+```bash
+# composer exec --list
+
+# Fix PHP code style
+composer exec php-cs-fixer
+
+# PHP Static Analysis
+composer exec phpstan
+```
+
 ## Credits
 
 - [AlphaSnow][link-author]
