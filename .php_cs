@@ -1,7 +1,7 @@
 <?php
 $header = <<<EOF
-This file is part of the sleep-cat/utils.
-(c) sleep-cat <wind91@foxmail.com>
+This file is part of the alphasnow/utils.
+(c) alphasnow <wind91@foxmail.com>
 This source file is subject to the MIT license that is bundled.
 EOF;
 return PhpCsFixer\Config::create()

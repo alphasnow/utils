@@ -1,15 +1,15 @@
 <?php
 
 /*
- * This file is part of the sleep-cat/utils.
- * (c) sleep-cat <wind91@foxmail.com>
+ * This file is part of the alphasnow/utils.
+ * (c) alphasnow <wind91@foxmail.com>
  * This source file is subject to the MIT license that is bundled.
  */
 
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use SleepCat\Utils\ListTree;
+use AlphaSnow\Utils\ListTree;
 
 class ListTreeTest extends TestCase
 {

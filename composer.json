@@ -1,5 +1,5 @@
 {
-    "name": "sleep-cat/utils",
+    "name": "alphasnow/utils",
     "description": "PHP util package",
     "keywords": [
         "php",
@@ -7,7 +7,7 @@
         "work box"
     ],
     "type": "library",
-    "homepage": "https://github.com/sleep-cat/utils",
+    "homepage": "https://github.com/alphasnow/utils",
     "license": "MIT",
     "authors": [
         {
@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SleepCat\\Utils\\": "src/"
+            "AlphaSnow\\Utils\\": "src/"
         },
         "files": [
             "src/helpers.php"
