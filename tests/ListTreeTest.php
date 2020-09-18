@@ -8,8 +8,8 @@
 
 namespace Tests;
 
-use PHPUnit\Framework\TestCase;
 use AlphaSnow\Utils\ListTree;
+use PHPUnit\Framework\TestCase;
 
 class ListTreeTest extends TestCase
 {
