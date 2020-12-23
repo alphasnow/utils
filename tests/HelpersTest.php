@@ -10,6 +10,10 @@ namespace AlphaSnow\Utils\Test;
 
 use PHPUnit\Framework\TestCase;
 
+/**
+ * Class HelpersTest
+ * @package AlphaSnow\Utils\Test
+ */
 class HelpersTest extends TestCase
 {
     public function testSnakeName()

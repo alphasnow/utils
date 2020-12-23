@@ -11,10 +11,20 @@ namespace AlphaSnow\Utils\Test;
 use AlphaSnow\Utils\ListTree;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * Class ListTreeTest
+ * @package AlphaSnow\Utils\Test
+ */
 class ListTreeTest extends TestCase
 {
+    /**
+     * @var array[]
+     */
     protected $tree;
 
+    /**
+     * @var array[] 
+     */
     protected $list;
 
     protected function setUp(): void
